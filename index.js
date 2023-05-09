@@ -1,33 +1,33 @@
 
 // * 1
-// const numbers = [4, 5, 6, 7, 8, 9, 10];
-// function elevados(numbers) {
-//     const  numerosElevados  = numbers.map((num) => num ** 2);
-//     return numerosElevados;
-// }
+var numbers = [4, 5, 6, 7, 8, 9, 10];
+function elevados(numbers) {
+    const  numerosElevados  = numbers.map((num) => num ** 2);
+    return numerosElevados;
+}
 
 
 // * 2
-// const foodList = ["Pizza", "Ramen", "Paella", "Entrecot"];
-// const foodSentences = foodList.map((food) => {
-//   if (food === "Pizza") {
-//     return `Como soy de Italia, amo comer ${foodList[0]}`;
-//   } else if (food === "Ramen") {
-//     return "Como soy de Japón, amo comer Ramen";
-//   } else if (food === "Paella") {
-//     return "Como soy de Valencia, amo comer Paella";
-//   } else if (food === "Entrecot") {
-//     return "Aunque no como carne, el Entrecot es sabroso";
-//   } else {
-//     return "";
-//   }
-// });
-// console.log (foodSentences);
+const foodList = ["Pizza", "Ramen", "Paella", "Entrecot"];
+const foodSentences = foodList.map((food) => {
+  if (food === "Pizza") {
+    return `Como soy de Italia, amo comer ${foodList[0]}`;
+  } else if (food === "Ramen") {
+    return "Como soy de Japón, amo comer Ramen";
+  } else if (food === "Paella") {
+    return "Como soy de Valencia, amo comer Paella";
+  } else if (food === "Entrecot") {
+    return "Aunque no como carne, el Entrecot es sabroso";
+  } else {
+    return "";
+  }
+});
+console.log (foodSentences);
 
 // * 3
-// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// const odds = numbers.filter((numbers) => numbers % 2 !==0) ;
-// console.log(odds);
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const odds = numbers.filter((numbers) => numbers % 2 !==0) ;
+console.log(odds);
 
 // *4
 const staff = [
@@ -60,32 +60,32 @@ console.log(staffPhrases);
 
 
 // *5
-// const inventory = [
-//     {
-//       name: 'Mobile phone',
-//       price: 199
-//     },
-//     {
-//       name: 'TV Samsung',
-//       price: 459
-//     },
-//     {
-//       name: 'Viaje a cancún',
-//       price: 600
-//     },
-//     {
-//       name: 'Mascarilla',
-//       price: 1
-//     }
-//   ];
+const inventory = [
+    {
+      name: 'Mobile phone',
+      price: 199
+    },
+    {
+      name: 'TV Samsung',
+      price: 459
+    },
+    {
+      name: 'Viaje a cancún',
+      price: 600
+    },
+    {
+      name: 'Mascarilla',
+      price: 1
+    }
+  ];
 
-// const items = inventory.filter(item => item.price > 300).map(item => item.name);
-// console.log(items);
+const items = inventory.filter(item => item.price > 300).map(item => item.name);
+console.log(items);
 
 // * 6
-// const numeros = [39, 2, 4, 25, 62];
-// const multi = numeros.reduce((a, b)=> a * b);
-// console.log(multi);
+const numeros = [39, 2, 4, 25, 62];
+const multi = numeros.reduce((a, b)=> a * b);
+console.log(multi);
 
 // * 7
 const sentenceElements = [
@@ -146,7 +146,7 @@ const books = [
     return acc;
   }, 0);
   
-  console.log(total);
+
 
 
   
