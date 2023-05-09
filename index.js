@@ -30,33 +30,33 @@
 // console.log(odds);
 
 // *4
-// const staff = [
-//     {
-//       name: 'Pepe',
-//       role: 'The Boss',
-//       hobbies: ['leer', 'ver pelis']
-//     },
-//     {
-//       name: 'Ana',
-//       role: 'becaria',
-//       hobbies: ['nadar', 'bailar']
-//     },
-//     {
-//       name: 'Luis',
-//       role: 'programador',
-//       hobbies: ['dormir', 'comprar']
-//     },
-//     {
-//       name: 'Carlos',
-//       role: 'secretario',
-//       hobbies: ['futbol', 'queso']
-//     }
-//   ];
+const staff = [
+    {
+      name: 'Pepe',
+      role: 'The Boss',
+      hobbies: ['leer', 'ver pelis']
+    },
+    {
+      name: 'Ana',
+      role: 'becaria',
+      hobbies: ['nadar', 'bailar']
+    },
+    {
+      name: 'Luis',
+      role: 'programador',
+      hobbies: ['dormir', 'comprar']
+    },
+    {
+      name: 'Carlos',
+      role: 'secretario',
+      hobbies: ['futbol', 'queso']
+    }
+  ];
   
-//   const staffPhrases = staff.filter(()=> true).map(person => {
-//     return `${person.name} es ${person.role} y le gusta ${person.hobbies.join(" y ")}`;
-// });
-// console.log(staffPhrases);
+  const staffPhrases = staff.filter(()=> true).map(person => {
+    return `${person.name} es ${person.role} y le gusta ${person.hobbies.join(" y ")}`;
+});
+console.log(staffPhrases);
 
 
 // *5
@@ -88,23 +88,28 @@
 // console.log(multi);
 
 // * 7
-// const sentenceElements = [
-//     'Me',
-//     'llamo',
-//     'Jorge',
-//     'y',
-//     'quiero',
-//     'sentir',
-//     'la',
-//     'fuerza',
-//     'con',
-//     'javascript'
-//   ];
+const sentenceElements = [
+    'Me',
+    'llamo',
+    'Jorge',
+    'y',
+    'quiero',
+    'sentir',
+    'la',
+    'fuerza',
+    'con',
+    'javascript'
+  ];
 
-//   const finalSentence = sentenceElements.reduce((concatenador, words)=>{
-//     return concatenador + ' ' +  words + ' ';  
-//   })
-//   console.log(finalSentence)
+  const finalSentence = sentenceElements.reduce((concatenador, words)=>{
+    return concatenador + ' ' +  words + ' ';  
+  })
+  console.log(finalSentence)
+
+const fullSentence = sentenceElements.reduce((acc, cur) => {
+    return acc+''+cur;
+});
+console.log(fullSentence);
 
 
 // *8
@@ -134,6 +139,14 @@ const books = [
       category: 'code'
     }
   ];
+  const total = books.reduce((acc, cur) => {
+    if (cur.category === "code") {
+      return acc + cur.price;
+    }
+    return acc;
+  }, 0);
+  
+  console.log(total);
 
-  const totalAmount = totalPrice.filter(item => item.category == 'code').reduce((a, b)=> a + b);
+
   
